@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap');
+
+/* Configurações gerais */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.content {
+  max-width: 1500px;
+  padding:0 50px;
+  margin: 0 auto;
+}
+
+/* Header */
+header#main-header{
+  margin:30px 0;
+}
+
+header#main-header .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header#main-header nav ul{
+  display: flex;
+  list-style: none;
+}
+
+header#main-header nav ul li{
+  margin:0 1em;
+
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+header#main-header nav ul li:first-child, header#main-header nav ul li:last-child {
+  margin: 0 0;
+}
+
+header#main-header nav ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #7c929b;
+  text-decoration: none;
+}
+
+
+header#main-header nav ul li svg {
+  margin:0 0 5px 0;
+  fill: #7c929b;
+  height: 30px;
+}
+
+header#main-header nav ul .logout svg{
+  fill:#ff5518;
+}
+
+header#main-header nav ul .logout a{
+  color:#ff5518;
+}
+
+header#main-header nav ul li a:hover,
+header#main-header nav ul li a:hover path, 
+header#main-header nav ul li a:hover rect, 
+header#main-header nav ul li a:hover circle{
+  color: #0077d6;
+  fill: #0077d6;
+}
+
+/* SUBHEADER */
+#sub-header{
+  text-align: center;
+  margin:6em auto;
+}
+
+#sub-header h1{
+  font-size: 3em;
+  color: #3b484c;
+}
+
+#sub-header h2{
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #7c929b;
+  margin: 1em 0 0 0;
+}
+
+/* MAIN CONTENT */
+.main-content{
+  margin:2em auto;
+}
+
+.main-content h2{
+  font-size:1.5em;
+  color: #3b484c;
+}
+
+/* ANNUAL STRATEGY */
+#annual-strategy{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.annual-okr{
+  width: 325px;
+  border: 1px solid #ccd6da;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em ;
+}
+
+.annual-okr:first-child {
+  margin: 1em 1em 1em 0;
+}
+
+.annual-okr:last-child{
+  margin: 1em 0 1em 1em;
+}
+
+/* OKR CONTENT */
+.okr-content{
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: center;
+  
+  padding:20px;
+}
+
+.okr-content img{
+  max-width: 100%;
+  align-self: center;
+}
+
+.okr-content h2{
+  padding:0;
+  margin:0;
+}
+
+/* OKR PROGRESS */
+
+.okr-progress{
+	width: 100%;
+	height: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.moment{
+	flex-grow: 1;
+	align-self: center;
+}
+
+.tipo-momento{
+	margin:0;
+	border-radius: 4px;
+  text-align: center;
+}
+
+.tipo-momento p{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #3b484c;
+	padding-top: 0.3em;
+}
+
+.progress{
+	flex-grow: 70;
+	align-self: center;
+	padding:0;
+	text-align: left;
+}
+
+.barra{
+	height: 15px;
+	background-color: #f0f0f0;
+	margin-right: 1.5em;
+	border-radius: 4px;
+	padding: 0;
+}
+.evolucao{
+	display: block;
+	width: 10%;
+	height: 15px;
+	background-color: #5bb433;
+	border-radius: 4px;
+	margin:0;
+}
+
+/* OKR INFO */
+.okr-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.okr-info button{
+  padding:10px;
+  border:0;
+  border-radius: 3px;
+  background-color: #0077d6;
+  color:#fff;
+  font-weight: bold;
+}
+
+.okr-info button:hover{
+  cursor: pointer;
+}
+
+.okr-info span{
+  font-size:0.8em;
+  color:#7c929b;
+}
+
+/* KR CONTENT */
+.kr-content{
+  background: #f4f8fb;
+  padding:20px;
+}
+
+.kr-info{
+  display: flex;
+  text-align: left;
+  padding:1.5em 0;
+  align-items: center;
+  border-bottom:1px solid #fff;
+}
+
+.kr-info:last-child{
+  border-bottom: 0;
+}
+
+.kr-info .update{
+  width: 30%;
+}
+
+.kr-info .kr-status{
+  width:70%;
+}
+
+.kr-info .kr-status h4{
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.kr-info .kr-status .barra{
+  background-color: #fff;
+}
+
+.btn-checkin{
+  font-size:0.55em;
+  text-align: center;
+  background:none;
+  border:none;
+  display: inline-block;
+  color:#0077d6;
+  fill: #0077d6;
+  text-align: center;
+}
+
+.btn-checkin svg{
+  height: 25px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.btn-checkin:hover{
+  fill: #3b484c;
+  color:#3b484c;
+  cursor: pointer;
+}
+
+/* QUARTER STRATEGY */
+/* TEMPORAL LINE */
+.temporal-line{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temporal-line a{
+  width: 100%;
+  text-align: center;
+  margin:1em;
+  padding:2em 0;
+  background:#fff;
+  border:1px solid #7c929b;
+  border-radius: 3px;
+  color: #7c929b;
+  text-decoration: none;
+}
+
+.temporal-line a:first-child{
+  margin-left: 0;
+}
+
+.temporal-line a:last-child{
+  margin-right: 0;
+}
+
+.temporal-line a.active, .temporal-line a:hover {
+  color: #fff;
+  background-color: #7c929b;
+}
+
+/* QUARTER OKR */
+.quarter-okr{
+  width: 100%;
+  display: block;
+  padding:2em;
+  border:1px solid #7c929b;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.quarter-okr h3{
+  font-size:1.3em;
+  color: #3b484c;
+  margin:1em 0;
+}
+
+/* QUARTE KR */
+.quarter-kr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f4f8fb;
+  padding:1em 0;
+  margin:1em auto;
+}
+
+.quarter-kr .btn-checkin{
+  width: 10%;
+}
+
+.quarter-kr .kr-status{
+  width: 50%;
+}
+
+.quarter-kr .okr-progress{
+  width: 40%;
+}
+
+/* FOOTER */
+footer{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+footer p{
+  padding:2em 0;
+}
