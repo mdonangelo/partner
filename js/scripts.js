@@ -1,7 +1,13 @@
 function showKrs(data, elem){
   var krElement = document.getElementById(data);
   krElement.classList.toggle('showKr');
-  elem.textContet = 'oi';
+
+  if(elem.textContent == 'Expandir KRs'){
+    elem.innerHTML = 'Retrair KRs';
+  }else{
+    elem.innerHTML = 'Expandir KRs';
+
+  }
   
   console.log(elem.textContet);
 }
